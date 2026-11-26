@@ -1,0 +1,17 @@
+import random
+
+
+password_letters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+
+password_longness = int(input("Enter the desired length of the password: "))
+
+
+password = ""
+
+
+for i in range(password_longness):
+    password += random.choice(password_letters)
+
+
+print("Generated password:", password)
